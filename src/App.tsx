@@ -1,5 +1,11 @@
+import { Container } from "./components/Container";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Container>123</Container>
+    </div>
+  );
 };
 
 export default App;
