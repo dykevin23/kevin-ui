@@ -1,12 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
+  content: [
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {},
   },
-  variants: {},
   plugins: [],
-}
+  // plugins: [require("@tailwindcss/forms")],
+};
