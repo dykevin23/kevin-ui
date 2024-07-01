@@ -1,11 +1,12 @@
 {
-  "name": "kevin-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "kevin-react-ui",
+  "private": false,
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prepare": "rm -rf dist && tsc",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -39,5 +40,21 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dykevin23/kevin-ui.git"
+  },
+  "keywords": [
+    "react",
+    "ui"
+  ],
+  "author": "dykevin23",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dykevin23/kevin-ui/issues"
+  },
+  "homepage": "https://github.com/dykevin23/kevin-ui#readme"
 }
