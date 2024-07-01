@@ -1,8 +1,11 @@
-import Button from "./components/Button";
-import "./styles/global.css"
+import { Button } from "./components";
 
 const App = () => {
-  return <div><Button/></div>
+  return (
+    <div>
+      <Button />
+    </div>
+  );
 };
 
 export default App;
