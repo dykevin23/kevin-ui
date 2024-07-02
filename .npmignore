@@ -1,9 +1,7 @@
-node_modules
-
-.storybook/*
-
 src
+node_modules
 *.ts
 *.tsx
 !dist
 src/stories
+.storybook/*

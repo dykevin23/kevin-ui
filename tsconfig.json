@@ -21,7 +21,7 @@
     },
     "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": false
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "src/stories/**/*"],
