@@ -52,6 +52,12 @@
     "react",
     "ui"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "author": "dykevin23",
   "license": "MIT",
   "bugs": {
