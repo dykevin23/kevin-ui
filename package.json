@@ -59,7 +59,6 @@
   "homepage": "https://github.com/dykevin23/kevin-ui#readme",
   "files": [
     "dist",
-    "src",
     "global.css"
   ]
 }
