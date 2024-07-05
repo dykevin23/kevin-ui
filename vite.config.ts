@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     dts(),
     postcss({
-      extract: "global.css", // CSS 파일을 추출하여 별도로 저장
+      extract: "dist/global.css", // CSS 파일을 추출하여 별도로 저장
       minimize: true,
       sourceMap: true,
       inject: false, // inject 옵션을 false로 설정하여 CSS 파일을 별도로 추출
@@ -32,6 +32,7 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
+        assetFileNames: "global.css",
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
