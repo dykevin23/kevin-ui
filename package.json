@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && cp src/global.css dist/global.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "prepare": "rm -rf dist && tsc",
+    "prepare": "rm -rf dist && tsc && cp src/global.css dist/global.css",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -59,7 +59,8 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.js"
-    }
+    },
+    "./global.css": "./dist/global.css"
   },
   "author": "dykevin23",
   "license": "MIT",
