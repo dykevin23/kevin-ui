@@ -4,9 +4,9 @@
   "version": "0.0.15",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && cp src/global.css dist/global.css",
+    "build": "vite build && tsc && cp src/global.css dist/global.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "prepare": "rm -rf dist && tsc && cp src/global.css dist/global.css",
+    "prepare": "rm -rf dist && vite build && tsc && cp src/global.css dist/global.css",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
