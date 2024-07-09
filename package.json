@@ -44,8 +44,8 @@
     "vite-plugin-dts": "^3.9.1"
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -57,8 +57,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
     },
     "./global.css": "./dist/global.css"
   },
