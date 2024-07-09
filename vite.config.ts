@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     dts(),
     postcss({
-      // extract: "global.css",
+      extract: "global.css",
       minimize: true,
       sourceMap: true,
       plugins: [require("tailwindcss"), require("autoprefixer")],
@@ -21,9 +21,6 @@ export default defineConfig({
       plugins: [require("tailwindcss"), require("autoprefixer")],
     },
   },
-  // css: {
-  //   postcss: "./postcss.config.js",
-  // },
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
