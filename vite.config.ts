@@ -10,12 +10,15 @@ export default defineConfig({
     react(),
     dts(),
     postcss({
-      extract: "global.css", // CSS 파일을 추출하여 별도로 저장
-      // minimize: true,
-      // sourceMap: true,
+      extract: "global.css",
       plugins: [require("tailwindcss"), require("autoprefixer")],
     }),
   ],
+  css: {
+    postcss: {
+      plugins: [require("tailwindcss"), require("autoprefixer")],
+    },
+  },
   // css: {
   //   postcss: "./postcss.config.js",
   // },
@@ -29,7 +32,6 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
-        assetFileNames: "global.css",
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
