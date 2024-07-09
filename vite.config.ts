@@ -16,11 +16,11 @@ export default defineConfig({
     //   plugins: [require("tailwindcss"), require("autoprefixer")],
     // }),
   ],
-  css: {
-    postcss: {
-      plugins: [require("tailwindcss"), require("autoprefixer")],
-    },
-  },
+  // css: {
+  //   postcss: {
+  //     plugins: [require("tailwindcss"), require("autoprefixer")],
+  //   },
+  // },
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
